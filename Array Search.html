@@ -1,0 +1,54 @@
+<script>
+    const f1 = ["a1","a2","a3","a4","a5","a6","a7"];
+    document.write(f1);
+    document.write("<br>")
+    // find
+    var f2 = f1.find(myFun);
+    function myFun(x){
+        return x=="a4";
+    }
+    if(f2){
+        document.write("found")
+    }
+    else{
+        document.write("not found")
+    }
+    document.write("<br>")
+    // find Index
+    var f3 = f1.findIndex(myFun);
+    function myFun(a){
+        return a=="a3"
+    }
+    document.write("a3 - "+f3);
+    
+    document.write("<br>");
+    // find last
+    var f4 =f1.findLast(myFun);
+    function myFun(b){
+        return b=="a4"
+    }
+    document.write("a4 - "+f4);
+    
+    document.write("<br>");
+    // find last index
+    var f5=f1.findLastIndex(myFun);
+    function myFun(c){
+        return c=="a5"
+    }
+    document.write("a5 - "+f5);
+    
+    document.write("<br>");
+    //index Of
+    var f6 =f1.indexOf("a2");
+    document.write("a2 - "+f6);
+    
+    document.write("<br>");
+    //last index of
+    var f7 =f1.lastIndexOf("a1")
+    document.write("a1 - "+f7);
+
+    document.write("<br>");
+    //includes
+    var f8 =f1.includes("a5")
+    document.write("a5 - "+f8)
+</script>
